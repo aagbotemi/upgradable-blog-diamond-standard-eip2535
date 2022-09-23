@@ -17,13 +17,13 @@ contract BlogFacet {
 
 
         /// @notice to blog to mapping so that, it will return
-        BlogAppStorage memory blogger = b.singleBlog[b.ID];
+        BlogAppStorage storage blogger = b.singleBlog[b.ID];
         blogger.blogOwner = _owner;
         blogger.title = _title;
         blogger.description = _description;
         blogger.imageURI = _imageURI;
         blogger.createdTime = block.timestamp;
-        blogger.updatedTime;
+        blogger.updatedTime = 0;
 
 
         /// @notice to blog to mapping so that, it will return

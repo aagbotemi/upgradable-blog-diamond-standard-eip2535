@@ -75,18 +75,29 @@ export async function deployDiamond() {
   }
   console.log("Completed diamond cut");
   DiamondAddress = diamond.address;
+  
 
-  ////// ADDRESS GOTTEN FROM DEPLOYMENT
-  // DiamondCutFacet deployed: 0x2b9732824FB79C1a50676cd6BeAe9aCDFC37966D
-  // Diamond deployed: 0xcFa9D7AC279ea6F8c33A8b55158Ad5F73DF5f1d1
-  // DiamondInit deployed: 0x7bbC30BA8ACFaEb0ba84a380157B4856b7e1D121
+  // ADDRESS GOTTEN FROM DEPLOYMENT
+  // DiamondCutFacet deployed: 0x8D49792b6EFa3e1719ca83073256eD93dE020c2F
+  // Diamond deployed: 0x36d0E19b49a507d0913aF6CD6d586Bb1A5A33459
+  // DiamondInit deployed: 0x666e48245c2da8f455D71eb55ea6a7e11F1f02E4
 
   // Deploying facets
-  // DiamondLoupeFacet deployed: 0xAc536c874DDf2EF1A9D992df5Fc81B7cAa624D75
-  // OwnershipFacet deployed: 0x22CEe9E82BE98300CA3fC966716004DCD23bbfA2
-  // BlogFacet deployed: 0x433d5EcDf809ee33f1d512a0e109aBF75a6DaC5F
+  // DiamondLoupeFacet deployed: 0x7d42360Fd018ca14326cBcD4606511F2C6094A46
+  // OwnershipFacet deployed: 0x517148AE76f517ca8DC66d7E6285272516928588
+  // BlogFacet deployed: 0x67557C1BE2E56833Ba596F904e533953811D8c63
+  
+  // Diamond cut tx:  0x4ce595ee7a6e7fbab0c63eeba86b5a5be1f122d4fa208b2c49737b207315f24d
 
-  // Diamond cut tx:  0x48cfc7ae84d8c90bd112ff8bcb310a3c2b5a93ab2d06542c3db6f03ba45d2286
+
+
+
+  // BlogFacet2: 0xbbd412Ed9D87AE726D5d54bDE63e699EEb2D2F96
+  // Diamond cut tx updated: 0x065f2db9cb34312b8399d86d8aa07fb373ea5cd47879e8871dfe11be1eaa4c51
+
+
+
+
 
   // creating three blogs
   // const Blog = await ethers.getContractFactory("BlogFacet");
@@ -117,13 +128,13 @@ export async function deployDiamond() {
   // console.log("Return all Blog 3: ", allPersonalBlog3);
 
   // const ReturnSingleBlog1 = await blog.returnSingleBlog(0);
-  // console.log("Return all Blog 1: ", ReturnSingleBlog1);
+  // console.log("Return Single Blog 1: ", ReturnSingleBlog1);
   
   // const ReturnSingleBlog2 = await blog.returnSingleBlog(1);
-  // console.log("Return all Blog 2: ", ReturnSingleBlog2);
+  // console.log("Return Single Blog 2: ", ReturnSingleBlog2);
   
   // const ReturnSingleBlog3 = await blog.returnSingleBlog(2);
-  // console.log("Return all Blog 3: ", ReturnSingleBlog3);
+  // console.log("Return Single Blog 3: ", ReturnSingleBlog3);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
